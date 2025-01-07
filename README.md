@@ -1,0 +1,3 @@
+# Objective-C Memory Leak Example
+
+This repository demonstrates a common memory leak in Objective-C related to string management and improper handling of strong properties.  The `bug.m` file contains the problematic code, which repeatedly allocates strings without releasing them. This leads to a steady memory increase. The solution, found in `bugSolution.m`, illustrates correct memory management techniques using `copy` instead of `strong` for the property and by ensuring the allocated string is properly released.
